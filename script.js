@@ -6,4 +6,10 @@ document.addEventListener("scroll", () =>{
     else{
         header.classList.remove("scrolled");
     }
-})
+});
+const toggleBtn = document.querySelector('.menu-toggle');
+const navLinks = document.querySelector('.nav__links');
+
+toggleBtn.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
+});
